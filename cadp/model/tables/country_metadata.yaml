@@ -26,4 +26,4 @@ tables:
         column: special_notes
         description: "Special notes if any "
         public: true
-    measures: []
+
