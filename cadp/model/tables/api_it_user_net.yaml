@@ -4,5 +4,46 @@ tables:
     sql: {{ load_sql('api_it_user_net') }}
     description: Semantic view for api_it_user_net.
     public: true
-    dimensions: []
+    dimensions:
+      - name: country_name
+        type: string
+        column: country_name
+        description: Country name
+        public: true
+      - name: country_code
+        type: string
+        column: country_code
+        description: Country code
+        public: true
+        primary_key: true
+      - name: indicator_name
+        type: string
+        column: indicator_name
+        description: Indicator name
+        public: true
+      - name: n_2021
+        type: number
+        column: n_2021
+        description: Year 2021 percentages
+        public: true
+      - name: n_2022
+        type: number
+        column: n_2022
+        description: Year 2022 percentages
+        public: true
+      - name: n_2024
+        type: number
+        column: n_2024
+        description: Year 2024 percenatges
+        public: true
+      - name: n_2023
+        type: number
+        column: n_2023
+        description: year 2023 percenatges
+        public: true
+      - name: n_2025
+        type: number
+        column: n_2025
+        description: year 2025 percentge
+        public: true
     measures: []
