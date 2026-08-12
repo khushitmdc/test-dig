@@ -21,4 +21,4 @@ tables:
         column: source_organization
         description: Source Organization
         public: true
-    measures: []
+
