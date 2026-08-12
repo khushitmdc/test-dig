@@ -21,12 +21,6 @@ tables:
         column: indicator_name
         description: Indicator name
         public: true
-        meta:
-          secure:
-            func: redact
-            user_groups:
-              includes:
-                - pii_access
       - name: n_2021
         type: number
         column: n_2021
@@ -58,7 +52,6 @@ tables:
         sql: "{TABLE.country_code}"
         description: Total countries data available and considered
         public: true
-
     joins:
       - name: country_metadata
         relationship: one_to_one
