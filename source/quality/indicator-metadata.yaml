@@ -1,0 +1,33 @@
+name: indicator-metadata-quality
+version: v1
+type: workflow
+tags:
+  - Quality
+description: Data quality checks for api-it-user-net
+workspace: public
+workflow:
+  dag:
+    - name: indicator-metadata-quality
+      title: indicator-metadata Quality Assertion
+      description: Data quality checks for api-it-user-net
+      spec:
+        stack: soda+python:1.0
+        logLevel: INFO
+        compute: runnable-default
+        resources:
+          requests:
+            cpu: 1000m
+            memory: 250Mi
+          limits:
+            cpu: 1000m
+            memory: 250Mi
+        stackSpec:
+          inputs:
+            - dataset: dataos://icebase:builderuploads/indicator_metadata
+              options:
+                engine: minerva
+                clusterName: builder
+              checks:
+                - row_count > 0:
+                    attributes:
+                      category: Accuracy
