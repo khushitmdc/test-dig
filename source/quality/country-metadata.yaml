@@ -1,0 +1,33 @@
+name: country-metadata-quality
+version: v1
+type: workflow
+tags:
+  - Quality
+description: Data quality checks for api-it-user-net
+workspace: public
+workflow:
+  dag:
+    - name: country-metadata-quality
+      title: country-metadata Quality Assertion
+      description: Data quality checks for api-it-user-net
+      spec:
+        stack: soda+python:1.0
+        logLevel: INFO
+        compute: runnable-default
+        resources:
+          requests:
+            cpu: 1000m
+            memory: 250Mi
+          limits:
+            cpu: 1000m
+            memory: 250Mi
+        stackSpec:
+          inputs:
+            - dataset: dataos://icebase:builderuploads/country_metadata
+              options:
+                engine: minerva
+                clusterName: builder
+              checks:
+                - missing_count(country_code) = 0:
+                    attributes:
+                      category: Completeness
