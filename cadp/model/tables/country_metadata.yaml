@@ -16,4 +16,9 @@ tables:
         column: region
         description: Region
         public: true
+      - name: income_group
+        type: string
+        column: income_group
+        description: Income group
+        public: true
     measures: []
