@@ -46,4 +46,9 @@ tables:
         column: n_2025
         description: year 2025 percentge
         public: true
-    measures: []
+    measures:
+      - name: total_countries_considered
+        type: count
+        sql: "{TABLE.country_code}"
+        description: Total countries data available and considered
+        public: true
