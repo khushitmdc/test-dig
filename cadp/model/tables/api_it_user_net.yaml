@@ -21,6 +21,12 @@ tables:
         column: indicator_name
         description: Indicator name
         public: true
+        meta:
+          secure:
+            func: redact
+            user_groups:
+              includes:
+                - pii_access
       - name: n_2021
         type: number
         column: n_2021
