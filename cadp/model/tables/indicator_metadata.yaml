@@ -4,5 +4,11 @@ tables:
     sql: {{ load_sql('indicator_metadata') }}
     description: Semantic view for indicator_metadata.
     public: true
-    dimensions: []
+    dimensions:
+      - name: indicator_code
+        type: string
+        column: ""
+        description: Indicator Code
+        public: true
+        primary_key: true
     measures: []
