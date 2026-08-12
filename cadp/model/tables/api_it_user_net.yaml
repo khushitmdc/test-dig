@@ -58,11 +58,7 @@ tables:
         sql: "{TABLE.country_code}"
         description: Total countries data available and considered
         public: true
-      - name: yoy_changes_2024_2025
-        type: number
-        sql: case when {TABLE.n_2024} is not nul and {TABLE.n_2025} is not null then {TABLE.n_2025}- {TABLE.n_2024} end
-        description: Year-on-Year changes for 2024 to 2025
-        public: true
+
     joins:
       - name: country_metadata
         relationship: one_to_one
