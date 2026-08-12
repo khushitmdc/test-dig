@@ -60,7 +60,7 @@ tables:
         public: true
       - name: yoy_changes_2024_2025
         type: number
-        sql: case when n_2024 is not nul and n_2025 is not null then n_2025-n_2024 end
+        sql: case when {TABLE.n_2024} is not nul and {TABLE.n_2025} is not null then {TABLE.n_2025}- {TABLE.n_2024} end
         description: Year-on-Year changes for 2024 to 2025
         public: true
     joins:
