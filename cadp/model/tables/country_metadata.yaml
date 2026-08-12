@@ -4,5 +4,11 @@ tables:
     sql: {{ load_sql('country_metadata') }}
     description: Semantic view for country_metadata.
     public: true
-    dimensions: []
+    dimensions:
+      - name: country_code
+        type: string
+        column: country_code
+        description: Country Code
+        public: true
+        primary_key: true
     measures: []
