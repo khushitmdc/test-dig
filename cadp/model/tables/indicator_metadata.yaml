@@ -7,7 +7,7 @@ tables:
     dimensions:
       - name: indicator_code
         type: string
-        column: ""
+        column: "indicator_code"
         description: Indicator Code
         public: true
         primary_key: true
