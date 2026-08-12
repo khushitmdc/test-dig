@@ -11,4 +11,14 @@ tables:
         description: Indicator Code
         public: true
         primary_key: true
+      - name: indocator_name
+        type: string
+        column: indocator_name
+        description: Indicator name
+        public: true
+      - name: source_note
+        type: string
+        column: source_note
+        description: Source note
+        public: true
     measures: []
