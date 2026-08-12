@@ -11,4 +11,9 @@ tables:
         description: Country Code
         public: true
         primary_key: true
+      - name: region
+        type: string
+        column: region
+        description: Region
+        public: true
     measures: []
