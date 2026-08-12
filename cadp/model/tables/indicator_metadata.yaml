@@ -21,4 +21,9 @@ tables:
         column: source_note
         description: Source note
         public: true
+      - name: source_organization
+        type: string
+        column: source_organization
+        description: Source Organization
+        public: true
     measures: []
