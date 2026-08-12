@@ -1,0 +1,8 @@
+tables:
+  - name: api_it_user_net
+    title: api_it_user_net
+    sql: {{ load_sql('api_it_user_net') }}
+    description: Semantic view for api_it_user_net.
+    public: true
+    dimensions: []
+    measures: []

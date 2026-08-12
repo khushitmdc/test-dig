@@ -1,0 +1,8 @@
+tables:
+  - name: country_metadata
+    title: country_metadata
+    sql: {{ load_sql('country_metadata') }}
+    description: Semantic view for country_metadata.
+    public: true
+    dimensions: []
+    measures: []

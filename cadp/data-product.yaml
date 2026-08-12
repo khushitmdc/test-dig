@@ -1,0 +1,63 @@
+version: v1beta
+entity: product
+type: data
+tags:
+  - DPTier.Consumer Aligned
+  - SemanticModelAgent
+v1beta:
+  data:
+    meta:
+      title: Global Digitisation View
+      sourceCodeUrl: https://github.com/khushitmdc/test-dig
+    collaborators:
+      - name: khushibedar
+        description: owner
+    resource:
+      description: Global Digitisation View is a data product designed to help
+        organisations, policymakers, and researchers track and understand the
+        progress of digitalisation worldwide. It brings together key digital
+        indicators — starting with internet usage (% of population) — across
+        countries, regions, and income groups. Users can explore trends over
+        time, compare regions and development levels, identify leaders and
+        laggards, and measure the pace of digital inclusion.
+      refType: dataos
+      type: bundle
+      version: v1beta
+      ref: bundle:v1beta:global-digitisation-view
+    inputs:
+      - description: "-"
+        purpose: "-"
+        refType: dataos
+        ref: dataos://icebase:builderuploads/api_it_user_net
+      - description: "-"
+        purpose: "-"
+        refType: dataos
+        ref: dataos://icebase:builderuploads/indicator_metadata
+      - description: "-"
+        purpose: "-"
+        refType: dataos
+        ref: dataos://icebase:builderuploads/country_metadata
+    ports:
+      lens:
+        ref: lens:v1alpha:global-digitisation-view-lens:public
+        refType: dataos
+        meta:
+          description: Global Digitisation View semantic model providing unified access to
+            curated metrics and dimensions for this data product.
+name: global-digitisation-view
+purpose: Global Digitisation View is a data product designed to help
+  organisations, policymakers, and researchers track and understand the progress
+  of digitalisation worldwide. It brings together key digital indicators —
+  starting with internet usage (% of population) — across countries, regions,
+  and income groups. Users can explore trends over time, compare regions and
+  development levels, identify leaders and laggards, and measure the pace of
+  digital inclusion.
+description: Global Digitisation View is a data product designed to help
+  organisations, policymakers, and researchers track and understand the progress
+  of digitalisation worldwide. It brings together key digital indicators —
+  starting with internet usage (% of population) — across countries, regions,
+  and income groups. Users can explore trends over time, compare regions and
+  development levels, identify leaders and laggards, and measure the pace of
+  digital inclusion.
+workspace: public
+owner: khushibedar

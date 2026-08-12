@@ -1,0 +1,27 @@
+name: wf-global-digitisation-view-sc
+version: v1
+type: workflow
+workspace: public
+layer: user
+tags:
+  - Tier.Gold
+  - SemanticModelAgent
+description: Scanner workflow for consumer-aligned data product
+  global-digitisation-view (metadata registration in DataOS).
+workflow:
+  dag:
+    - name: global-digitisation-view-scan
+      description: Scanner for global-digitisation-view (data product metadata
+        registration).
+      spec:
+        stack: scanner:2.0
+        compute: runnable-default
+        stackSpec:
+          type: data-product
+          sourceConfig:
+            config:
+              type: DataProductMetadata
+              markDeletedDataProducts: true
+              dataProductFilterPattern:
+                includes:
+                  - global-digitisation-view

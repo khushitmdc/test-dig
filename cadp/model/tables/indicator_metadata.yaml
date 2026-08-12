@@ -1,0 +1,8 @@
+tables:
+  - name: indicator_metadata
+    title: indicator_metadata
+    sql: {{ load_sql('indicator_metadata') }}
+    description: Semantic view for indicator_metadata.
+    public: true
+    dimensions: []
+    measures: []

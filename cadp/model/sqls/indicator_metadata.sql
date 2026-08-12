@@ -1,0 +1,1 @@
+SELECT * FROM icebase.builderuploads.indicator_metadata
