@@ -52,6 +52,11 @@ tables:
         column: n_2025
         description: year 2025 percentge
         public: true
+      - name: date_column
+        type: string
+        description: Date column
+        public: true
+        sql: date_diff('day',current_timestamp,current_timestamp)
     measures:
       - name: total_countries_considered
         type: count
