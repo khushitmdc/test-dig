@@ -72,6 +72,3 @@ tables:
       - name: country_metadata
         relationship: one_to_many
         sql: "{TABLE}.country_code = {country_metadata.country_code}"
-      - name: indicator_metadata
-        relationship: one_to_many
-        sql: "{TABLE}.indicator_code = {indicator_metadata.indicator_code}"
