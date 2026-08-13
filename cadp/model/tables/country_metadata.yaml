@@ -27,3 +27,9 @@ tables:
         description: "Special notes if any "
         public: true
         primary_key: false
+    measures:
+      - name: max_time
+        type: max
+        sql: current_timestamp
+        description: max
+        public: true
