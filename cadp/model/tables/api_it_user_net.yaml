@@ -63,6 +63,11 @@ tables:
         sql: "{TABLE.country_code}"
         description: Total countries data available and considered
         public: true
+      - name: test_measure
+        type: sum
+        sql: case when country_name in ('Sri Lanka', 'Lesotho') then 1 end
+        description: test_measure
+        public: true
     joins:
       - name: country_metadata
         relationship: one_to_many
