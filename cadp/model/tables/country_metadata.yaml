@@ -10,7 +10,7 @@ tables:
         column: country_code
         description: Country Code
         public: true
-        primary_key: true
+        primary_key: false
       - name: region
         type: string
         column: region
@@ -26,4 +26,3 @@ tables:
         column: special_notes
         description: "Special notes if any "
         public: true
-
