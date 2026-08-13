@@ -5,20 +5,14 @@ tables:
     description: Semantic view for indicator_metadata.
     public: true
     dimensions:
-      - name: indicator_code
+      - name: Indicator_Code
         type: string
-        column: "indicator_code"
+        column: Indicator_Code
         description: Indicator Code
         public: true
         primary_key: true
-      - name: source_note
+      - name: Source_Note
         type: string
-        column: source_note
+        column: Source_Note
         description: Source note
         public: true
-      - name: source_organization
-        type: string
-        column: source_organization
-        description: Source Organization
-        public: true
-
