@@ -37,6 +37,10 @@ lens:
       limits:
         cpu: 250m
         memory: 512Mi
+    envs:
+      LENS2_DB_TIMEOUT: "1500000"
+      LENS2_SCHEDULED_REFRESH_TIMEZONES: UTC,America/Vancouver,America/Toronto
+      LENS2_SOURCE_CATALOG_NAME: icebase        
   worker:
     logLevel: info
     resources:
