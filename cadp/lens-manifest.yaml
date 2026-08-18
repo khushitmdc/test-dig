@@ -47,4 +47,4 @@ lens:
         cpu: 250m
         memory: 512Mi
 name: global-digitisation-view-lens
-description: Lens manifest for Global Digitisation View
+description: fresh added Lens manifest for Global Digitisation View
