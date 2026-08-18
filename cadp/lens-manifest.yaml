@@ -40,7 +40,9 @@ lens:
     envs:
       LENS2_DB_TIMEOUT: "1500000"
       LENS2_SCHEDULED_REFRESH_TIMEZONES: UTC,America/Vancouver,America/Toronto
-      LENS2_SOURCE_CATALOG_NAME: icebase        
+      LENS2_SOURCE_CATALOG_NAME: icebase   
+      MINERVA_TCP_HOST: gateway.network-gateway.svc.cluster.local
+      MINERVA_TCP_PORT: 17432
   worker:
     logLevel: info
     resources:
