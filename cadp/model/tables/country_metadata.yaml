@@ -10,7 +10,7 @@ tables:
         column: country_code
         description: Country Code
         public: true
-        primary_key: false
+        primary_key: true
       - name: region
         type: string
         column: region
